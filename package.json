@@ -7,7 +7,7 @@
     "react-dom": "^16.8.6",
     "react-jss": "^8.6.1",
     "react-scripts": "2.1.8",
-    "react-scrollama": "^0.5.0"
+    "react-scrollama": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
