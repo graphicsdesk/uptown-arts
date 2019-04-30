@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import injectSheet from 'react-jss';
 
+const blue = require('./images/blue.jpg')
+const red = require('./images/red.jpg')
+const man = require('./images/man.jpg')
+const abstract = require('./images/abstract.jpg')
+
 const styles = {
   main: {
-    padding: '70vh 2vw',
+    backgroundColor: 'black',
+    padding: '100vh 2vw',
     display: 'flex',
     fontFamily: 'Helvetica',
     justifyContent: 'space-between',
+    color: '#fff',
   },
   graphic: {
     flexBasis: '60%',
@@ -16,7 +23,6 @@ const styles = {
     height: '100vh',
     top: 0,
     alignSelf: 'flex-start',
-    backgroundColor: '#aaa',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -26,40 +32,49 @@ const styles = {
       color: '#fff',
     },
   },
+  img: {
+    maxWidth: '100%',
+    maxHeight: '100%',
+  },
   scroller: {
     flexBasis: '35%',
   },
   step: {
-    margin: '0 auto 2rem auto',
-    paddingTop: 200,
-    paddingBottom: 200,
-    border: '1px solid #333',
+    margin: '0 auto 80vh auto',
+    padding: '1px',
     '& p': {
       textAlign: 'center',
       padding: '1rem',
       fontSize: '1.5rem',
     },
-    '&:last-child': {
-      marginBottom: 0,
-    },
   },
 };
 
+//  <img src = { blue } />
 class App extends Component {
+
   state = {
-    data: 0,
-    steps: [1, 2, 3],
+    data: null,
+    steps: [blue, red, man, abstract],
   }
 
-  onStepEnter = ({ data }) => this.setState({ data });
+  onStepEnter = ({ data }) => {
+    console.log('enter');
+    this.setState({ data });
+  }
+
+  onStepExit = ({ data }) => {
+    console.log('exit')
+  }
 
   render() {
     const { data, steps } = this.state;
     const { classes } = this.props;
+
     return (
       <div className={classes.main}>
         <div className={classes.graphic}>
-          <p>{data}</p>
+          <img className={classes.img} src={data} />
         </div>
         <div className={classes.scroller}>
           <Scrollama
