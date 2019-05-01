@@ -4,10 +4,10 @@ import injectSheet from 'react-jss';
 const styles = {
   text: {
     lineHeight: 1.9,
-    fontSize: '1.1rem',
+    fontSize: '1.05rem',
     fontFamily: 'Merriweather',
     margin: '0 auto 1.3rem auto',
-    maxWidth: '650px',
+    maxWidth: '600px',
     padding: '0 15px',
     '& a': {
       textDecoration: 'none',

@@ -55,20 +55,20 @@ const styles = {
   },
   artistName: {
     fontFamily: 'Merriweather',
-    fontSize: '1.2rem',
+    fontSize: '1.1rem',
     fontWeight: 700,
     margin: '0',
     marginTop: '1rem',
   },
   text: {
     fontFamily: 'Merriweather',
-    fontSize: '1.2rem',
+    fontSize: '1.05rem',
     margin: '1.2rem 1rem 1rem 0',
     lineHeight: '1.7',
   },
   credit: {
     color: '#aaa',
-    fontSize: '0.85rem',
+    fontSize: '0.8rem',
     margin: '0 2rem 1rem 0',
     borderTop: '0.8px solid #ddd',
     paddingTop: '0.8rem',

@@ -1,9 +1,11 @@
 {
   "name": "uptown-arts",
+  "homepage": "https://github.com/spec-journalism/uptown-arts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "archieml": "^0.4.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-jss": "^8.6.1",
@@ -14,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
