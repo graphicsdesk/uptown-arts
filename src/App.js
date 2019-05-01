@@ -3,20 +3,31 @@ import { Scrollama, Step } from 'react-scrollama';
 import injectSheet from 'react-jss';
 import copyString from './copy';
 import archieml from 'archieml';
+import { relative } from 'path';
+
+/*
+possible window dimensions: 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
 
 const { copy } = archieml.load(copyString);
-
-const blue = require('./images/blue.jpg')
-const red = require('./images/red.jpg')
-const man = require('./images/man.jpg')
-const abstract = require('./images/abstract.jpg')
 
 const styles = {
   main: {
     padding: '100vh 2vw',
-    display: 'flex',
     fontFamily: 'Helvetica',
-    justifyContent: 'space-between',
+    display: 'flex',
+    justifyContent: 'space-evenly',
   },
   graphic: {
     flexBasis: '60%',
@@ -34,7 +45,7 @@ const styles = {
     maxWidth: '95%',
     maxHeight: '93%',
     visibility: 'visible',
-    opacity: 1,
+   // opacity: 1,
     transitionDuration: '.3s',
     boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
@@ -51,9 +62,9 @@ const styles = {
     flexBasis: '35%',
   },
   step: {
-    margin: '0 auto 2rem auto',
-    paddingTop: '200px',
-    paddingBottom: '200px',
+    margin: '0 auto auto auto',
+    paddingTop: '350px',
+    paddingBottom: '270px',
   },
   artistName: {
     fontFamily: 'Merriweather',
@@ -64,19 +75,57 @@ const styles = {
   text: {
     fontFamily: 'Merriweather',
     fontSize: '1.2rem',
-    margin: '0 0 1rem 0',
+    margin: '0 1rem 1rem 0',
     lineHeight: '1.7',
   },
   credit: {
     color: '#aaa',
-    fontSize: '1rem',
+    fontSize: '0.85rem',
+    margin: '0 2rem 1rem 0',
     borderTop: '0.8px solid #ddd',
     paddingTop: '0.8rem',
+    fontWeight: '20px',
     fontFamily: 'Open Sans',
   },
+  '@media (max-width: 576px)': {
+    main: {
+      flexDirection: 'column', 
+      //update margins
+      margin: '1rem, 0, 1rem, 0'
+      // change flex direction
+    },
+    scroller: {
+      zIndex: '1', 
+      flexBasis: '75%'
+    },
+    step: {
+      backgroundClip: 'content-box',
+      backgroundColor: 'rgba(255, 255, 255, 0.5)',
+       
+      //adjust margins
+      // give it a white background, a little transparent (rgba)
+    },
+    credit: 
+    {
+      color: 'black', 
+      borderTop: '0.8px solid #ddd',
+      borderColor: 'black',
+      fontSize: '0.6rem'
+    },
+    text: 
+    { 
+      justifyContent: 'center', 
+      textAlign: 'center', 
+      fontSize: '0.9rem'
+    }, 
+    artistName: 
+    {
+      textAlign: 'center', 
+    },
+    // maybe also center the text
+  }
 };
 
-//  <img src = { blue } />
 class App extends Component {
   constructor(props) {
     super(props);

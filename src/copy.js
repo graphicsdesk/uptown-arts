@@ -44,14 +44,19 @@ image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ZG4T4M
 credit: “Sun Este”  2019, Acrylic on canvas 26" x 20" (Courtesy The FdlM Studio)
 
 
-
+image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/6JWKAE3TORBYNDAJZUIVFPUZKA.jpg
+[.steps]
+* Maggie Hernández’s home studio is as bright and lively as the art that fills it. Natural light, french doors, and buttercream paint on the walls give the space a carefree zest.
 []
-:ignore
+credit: Margaret Maguire
+
+
+[.steps]
+* This piece of Hernandez’s, called X, has a loose playfulness that reflects her process, which prefers the act of creating over the result of any one piece.
+* “When you work intuitively like that and you're just moving, moving and you're not really thinking about it, sometimes they're, they're bad to look at. But as an experience for me it's like cathartic because I'm just in it. Going, moving with a brush and not thinking about anything. It's almost like people who say that they spend hours in meditation clearing their mind, that's what I feel happens to me.”
 artist: Maggie Hernández
+credit: Maggie Hernández
 
-
-Maggie Hernandez’s home studio 
-Credit: Spec
 
 
 
