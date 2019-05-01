@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "1a9e1579ba4c2cd20301",
-    "url": "/spec-journalism/uptown-arts/static/js/main.7424c740.chunk.js"
+    "revision": "85e15638037f013901a2",
+    "url": "/spec-journalism/uptown-arts/static/js/main.3034c944.chunk.js"
   },
   {
     "revision": "698cb26c8b2996800a5a",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/spec-journalism/uptown-arts/static/js/2.24737297.chunk.js"
   },
   {
-    "revision": "5a5abcadf787f49722aee2a2b407a4fc",
+    "revision": "8813c608e11501a8780e7596bab98593",
     "url": "/spec-journalism/uptown-arts/index.html"
   }
 ];

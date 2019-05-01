@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/spec-journalism/uptown-arts/precache-manifest.4499886f4329e2d6bb8d64376d0f93be.js"
+  "/spec-journalism/uptown-arts/precache-manifest.db2ffb27b1c11e075d7054db4f7a8487.js"
 );
 
 workbox.clientsClaim();
