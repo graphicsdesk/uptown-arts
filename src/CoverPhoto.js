@@ -5,7 +5,7 @@ const styles = {
   container: {
     width: '75vw',
     maxWidth: '900px',
-    margin: '0 auto 2rem auto',
+    margin: '0 auto 1.3rem auto',
   },
   image: {
     width: '100%',

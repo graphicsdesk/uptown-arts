@@ -18,6 +18,13 @@ const styles = {
     '& a:hover': {
       borderBottomWidth: '1px',
     },
+    '& b': {
+      display: 'block',
+      margin: '0 auto',
+      textTransform: 'uppercase',
+      fontSize: '1.2rem',
+      textAlign: 'center',
+    },
   },
 };
 
