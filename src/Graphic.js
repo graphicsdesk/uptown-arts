@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { Scrollama, Step } from 'react-scrollama';
 import injectSheet from 'react-jss';
-import copyString from './copy';
-import archieml from 'archieml';
 
-const SCROLLAMA_OFFSET = window.innerWidth > 575 ? 0.4 : 0.8;
-
-const { copy } = archieml.load(copyString);
+const SCROLLAMA_OFFSET = window.innerWidth > 575 ? 0.5 : 0.8;
 
 const styles = {
   main: {
@@ -33,7 +29,7 @@ const styles = {
     maxHeight: '93%',
     visibility: 'visible',
     opacity: 1,
-    transitionDuration: '.3s',
+    transitionDuration: '.4s',
     boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
   hideImg: {
@@ -42,7 +38,7 @@ const styles = {
     maxHeight: '93%',
     visibility: 'hidden',
     opacity: 0,
-    transitionDuration: '.3s',
+    transitionDuration: '.4s',
     boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
   scroller: {
@@ -80,9 +76,6 @@ const styles = {
   '@media (max-width: 575px)': {
     main: {
       flexDirection: 'column',
-      //update margins
-      //margin: '1rem, 0, 1rem, 0'
-      // change flex direction
     },
     scroller: {
       paddingTop: 0,
@@ -112,11 +105,11 @@ const styles = {
 class Graphic extends Component {
   constructor(props) {
     super(props);
-    const { classes } = props;
+    const { classes, artists } = props;
 
     this.images = [];
 
-    this.steps = copy.reduce((acc, artistObj) => {
+    this.steps = artists.reduce((acc, artistObj) => {
       const { artist, artworks } = artistObj;
       artworks.forEach((artwork, artworkIdx) => {
         const { credit, image, steps } = artwork;

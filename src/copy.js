@@ -1,7 +1,20 @@
 export default `
 This document is written in the markup language ArchieML (AML). AML makes it a lot easier to write and edit structured text that can be directly put into code.
 
-[copy]
+{header}
+
+headline: Uptown Arts Stroll
+image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/RTCVTHKADBDZXMMHFWSNMRYCNE.png
+[.bylines]
+* Written by Keri Kelly
+* Graphics by Raeedah Wahid and Jason Kao
+* Illustration by Brenda Huang
+[]
+date: May 1, 2019
+
+[]
+
+[artists]
 
 artist: Sky Pape
 
@@ -63,7 +76,7 @@ image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/QJUPEE
 * This piece of Hernández’s, called “Whipped,” has a loose playfulness that reflects her process, which prefers the act of creating over the result of any one piece.
 * “When you work intuitively like that and you're just moving, moving and you're not really thinking about it, sometimes they're bad to look at. But as an experience, for me, it's like cathartic because I'm just in it. Going, moving with a brush and not thinking about anything. It's almost like people who say that they spend hours in meditation clearing their mind, that's what I feel happens to me.”
 []
-credit: Whipped, 2019, Acrylic on Canvas, 24x24” Maggie Hernández
+credit: Whipped, 2019, Acrylic on Canvas, 24x24” Maggie Hernandez
 
 []
 `;

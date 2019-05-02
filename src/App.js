@@ -1,8 +1,13 @@
 import React from 'react';
 import injectSheet from 'react-jss';
+import archieml from 'archieml';
+import copyString from './copy';
+
 import Graphic from './Graphic';
 import Paragraph from './Paragraph';
 import Header from './Header';
+
+const { header, artists } = archieml.load(copyString);
 
 const styles = {
   App: {
@@ -17,24 +22,12 @@ const contentBefore = [
 
 const contentAfter = contentBefore;
 
-const header = {
-  bylines: [
-    'Written by Keri Kelly',
-    'Graphics by Raeedah Wahid',
-    'Illustration by Brenda Huang',
-  ],
-  date: 'May 1, 2019',
-  headline: 'Uptown Arts Stroll',
-  image:
-    'https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ZG4T4MFYYJASHLTKYXESSL2CK4.jpg',
-};
-
 const App = ({ classes }) => {
   return (
     <div className={classes.App}>
       <Header header={header} />
       {contentBefore.map(text => <Paragraph text={text} />)}
-      <Graphic />
+      <Graphic artists={artists} />
       {contentAfter.map(text => <Paragraph text={text} />)}
     </div>
   );
