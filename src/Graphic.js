@@ -4,6 +4,8 @@ import injectSheet from 'react-jss';
 import copyString from './copy';
 import archieml from 'archieml';
 
+const SCROLLAMA_OFFSET = window.innerWidth > 575 ? 0.4 : 0.8;
+
 const { copy } = archieml.load(copyString);
 
 const styles = {
@@ -30,7 +32,7 @@ const styles = {
     maxWidth: '95%',
     maxHeight: '93%',
     visibility: 'visible',
-   // opacity: 1,
+    opacity: 1,
     transitionDuration: '.3s',
     boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
@@ -45,25 +47,24 @@ const styles = {
   },
   scroller: {
     flexBasis: '35%',
-    paddingBottom: '70vh',
+    padding: '70vh 0 20vh 0',
   },
   step: {
-    margin: '0 auto auto auto',
+    margin: '0 auto',
     maxWidth: '500px',
-    paddingTop: '350px',
-    paddingBottom: '270px',
+    padding: '10px',
+    marginBottom: '80vh',
   },
   artistName: {
     fontFamily: 'Merriweather',
     fontSize: '1.1rem',
     fontWeight: 700,
     margin: '0',
-    marginTop: '1rem',
   },
   text: {
     fontFamily: 'Merriweather',
     fontSize: '1.05rem',
-    margin: '1.2rem 1rem 1rem 0',
+    margin: '1.2rem 0 1rem 0',
     lineHeight: '1.7',
   },
   credit: {
@@ -78,38 +79,34 @@ const styles = {
 
   '@media (max-width: 575px)': {
     main: {
-      flexDirection: 'column', 
+      flexDirection: 'column',
       //update margins
       //margin: '1rem, 0, 1rem, 0'
       // change flex direction
     },
     scroller: {
-      zIndex: '1', 
-      flexBasis: '75%'
+      paddingTop: 0,
+      zIndex: '1',
     },
     step: {
-      backgroundClip: 'content-box',
       backgroundColor: 'rgba(255, 255, 255, 0.9)',
-       
-      //adjust margins
-      // give it a white background, a little transparent (rgba)
     },
     credit: {
-      color: 'black', 
+      color: 'black',
       borderTop: '0.8px solid #ddd',
       borderColor: 'black',
-      fontSize: '0.6rem'
+      fontSize: '0.6rem',
     },
-    text: { 
-      justifyContent: 'center', 
-      textAlign: 'center', 
+    text: {
+      justifyContent: 'center',
+      textAlign: 'center',
       fontSize: '1rem',
-    }, 
-    artistName: {
-      textAlign: 'center', 
-      marginTop: '1.4rem',
     },
-  }
+    artistName: {
+      textAlign: 'center',
+      paddingTop: '1rem',
+    },
+  },
 };
 
 class Graphic extends Component {
@@ -132,15 +129,12 @@ class Graphic extends Component {
           acc.push(
             <Step data={image} key={step}>
               <div className={classes.step}>
-                {artworkIdx === 0 && stepIdx === 0 && (
-                  <p className={classes.artistName}>{artist}</p>
-                )}
+                {artworkIdx === 0 &&
+                stepIdx === 0 && <p className={classes.artistName}>{artist}</p>}
                 <p className={classes.text}>{step}</p>
-                {stepIdx === 0 && (
-                  <p className={classes.credit}>{credit}</p>
-                )}
+                {stepIdx === 0 && <p className={classes.credit}>{credit}</p>}
               </div>
-            </Step>
+            </Step>,
           );
         });
       });
@@ -148,13 +142,13 @@ class Graphic extends Component {
     }, []);
 
     this.state = {
-      data: null,
+      data: this.images[0].src,
     };
   }
 
   onStepEnter = ({ data }) => {
     this.setState({ data });
-  }
+  };
 
   render() {
     const { data } = this.state;
@@ -174,7 +168,7 @@ class Graphic extends Component {
         </div>
         <div className={classes.scroller}>
           <Scrollama
-            offset={0.33}
+            offset={SCROLLAMA_OFFSET}
             onStepEnter={this.onStepEnter}
             onStepExit={this.onStepExit}
           >
