@@ -7,7 +7,7 @@ headline: The Uptown Arts Stroll Paints a Portrait of Upper Manhattan
 image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/RTCVTHKADBDZXMMHFWSNMRYCNE.png
 [.bylines]
 * Written by Keri Kelly
-* Graphics by Raeedah Wahid and Jason Kao
+* Graphics by Jason Kao and Raeedah Wahid
 * Illustration by Brenda Huang
 []
 

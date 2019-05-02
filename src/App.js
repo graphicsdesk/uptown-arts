@@ -15,7 +15,7 @@ const { header, contentBefore, artists, contentAfter } = archieml.load(
 
 const styles = {
   App: {
-    margin: '5vh 0',
+    margin: '5vh 0 !important',
   },
 };
 

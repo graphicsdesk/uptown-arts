@@ -5,100 +5,100 @@ import injectSheet from 'react-jss';
 const SCROLLAMA_OFFSET = window.innerWidth > 575 ? 0.5 : 0.8;
 
 const imgStyles = {
-  position: 'absolute',
-  maxWidth: '95%',
-  maxHeight: '93%',
-  transitionDuration: '.6s',
-  boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
+  position: 'absolute !important',
+  maxWidth: '95% !important',
+  maxHeight: '93% !important',
+  transitionDuration: '.6s !important',
+  boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75) !important',
 };
 
 const styles = {
   main: {
-    padding: '0 15px',
-    marginBottom: '2rem',
-    fontFamily: 'Helvetica',
-    display: 'flex',
-    justifyContent: 'space-evenly',
+    padding: '0 15px !important',
+    marginBottom: '2rem !important',
+    fontFamily: 'Helvetica !important',
+    display: 'flex !important',
+    justifyContent: 'space-evenly !important',
   },
   graphic: {
-    transform: 'translate3d(0, 0, 0)',
-    flexBasis: '60%',
-    position: 'sticky',
-    width: '100%',
-    height: '100vh',
-    top: 0,
-    alignSelf: 'flex-start',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    transform: 'translate3d(0, 0, 0) !important',
+    flexBasis: '60% !important',
+    position: 'sticky !important',
+    width: '100% !important',
+    height: '100vh !important',
+    top: '0 !important',
+    alignSelf: 'flex-start !important',
+    display: 'flex !important',
+    justifyContent: 'center !important',
+    alignItems: 'center !important',
   },
   img: {
     ...imgStyles,
-    visibility: 'visible',
-    opacity: 1,
+    visibility: 'visible !important',
+    opacity: '1 !important',
   },
   hideImg: {
     ...imgStyles,
-    visibility: 'hidden',
-    opacity: 0,
+    visibility: 'hidden !important',
+    opacity: '0 !important',
   },
   scroller: {
-    flexBasis: '35%',
-    padding: '70vh 0 20vh 0',
+    flexBasis: '35% !important',
+    padding: '70vh 0 20vh 0 !important',
   },
   step: {
-    margin: '0 auto',
-    maxWidth: '500px',
-    padding: '10px',
-    marginBottom: '80vh',
+    margin: '0 auto !important',
+    maxWidth: '500px !important',
+    padding: '10px !important',
+    marginBottom: '80vh !important',
   },
   artistName: {
-    fontFamily: 'Merriweather',
-    fontSize: '1.1rem',
-    fontWeight: 700,
-    margin: '0',
+    fontFamily: 'Merriweather !important',
+    fontSize: '1.1rem !important',
+    fontWeight: '700 !important',
+    margin: '0 !important',
   },
   text: {
-    fontFamily: 'Merriweather',
-    fontSize: '1.05rem',
-    margin: '1.2rem 0 1rem 0',
-    lineHeight: '1.7',
+    fontFamily: 'Merriweather !important',
+    fontSize: '1.05rem !important',
+    margin: '1.2rem 0 1rem 0 !important',
+    lineHeight: '1.7 !important',
   },
   credit: {
-    color: '#aaa',
-    fontSize: '0.8rem',
-    margin: '0 2rem 1rem 0',
-    borderTop: '0.8px solid #ddd',
-    paddingTop: '0.8rem',
-    fontWeight: '20px',
-    fontFamily: 'Open Sans',
+    color: '#aaa !important',
+    fontSize: '0.8rem !important',
+    margin: '0 2rem 1rem 0 !important',
+    borderTop: '0.8px solid #ddd !important',
+    paddingTop: '0.8rem !important',
+    fontWeight: '20px !important',
+    fontFamily: 'Open Sans !important',
   },
 
   '@media (max-width: 575px)': {
     main: {
-      flexDirection: 'column',
+      flexDirection: 'column !important',
     },
     scroller: {
-      paddingTop: 0,
-      zIndex: '1',
+      paddingTop: '0 !important',
+      zIndex: '1 !important',
     },
     step: {
-      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      backgroundColor: 'rgba(255, 255, 255, 0.9) !important',
     },
     credit: {
-      color: 'black',
-      borderTop: '0.8px solid #ddd',
-      borderColor: 'black',
-      fontSize: '0.6rem',
+      color: 'black !important',
+      borderTop: '0.8px solid #ddd !important',
+      borderColor: 'black !important',
+      fontSize: '0.6rem !important',
     },
     text: {
-      justifyContent: 'center',
-      textAlign: 'center',
-      fontSize: '1rem',
+      justifyContent: 'center !important',
+      textAlign: 'center !important',
+      fontSize: '1rem !important',
     },
     artistName: {
-      textAlign: 'center',
-      paddingTop: '1rem',
+      textAlign: 'center !important',
+      paddingTop: '1rem !important',
     },
   },
 };
@@ -155,7 +155,7 @@ class Graphic extends Component {
 
     return (
       <div className={classes.main}>
-        <div className={classes.graphic}>
+        <div className={classes.graphic} id="dangerous-sticky-enforcer">
           {this.images.map(({ src, alt }) => (
             <img
               key={src}

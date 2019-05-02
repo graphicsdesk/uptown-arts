@@ -3,27 +3,26 @@ import injectSheet from 'react-jss';
 
 const styles = {
   text: {
-    lineHeight: 1.9,
-    fontSize: '1.05rem',
-    fontFamily: 'Merriweather',
-    margin: '0 auto 1.3rem auto',
-    maxWidth: '600px',
-    padding: '0 15px',
+    lineHeight: '1.9 !important',
+    fontSize: '1.05rem !important',
+    fontFamily: 'Merriweather !important',
+    margin: '0 auto 1.3rem auto !important',
+    maxWidth: '600px !important',
+    padding: '0 15px !important',
     '& a': {
-      textDecoration: 'none',
-      color: '#5ec2c2',
-      borderBottomColor: '#5ec2c2',
-      borderBottomWidth: 0,
+      textDecoration: 'none !important',
+      color: '#5ec2c2 !important',
+      borderBottom: 'none !important',
     },
     '& a:hover': {
-      borderBottomWidth: '1px',
+      borderBottom: '1px solid #5ec2c2 !important',
     },
     '& b': {
-      display: 'block',
-      margin: '0 auto',
-      textTransform: 'uppercase',
-      fontSize: '1.2rem',
-      textAlign: 'center',
+      display: 'block !important',
+      margin: '0 auto !important',
+      textTransform: 'uppercase !important',
+      fontSize: '1.2rem !important',
+      textAlign: 'center !important',
     },
   },
 };
