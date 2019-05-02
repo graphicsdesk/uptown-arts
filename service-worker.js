@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/uptown-arts/precache-manifest.662d55a017e0c84a2acfc5e76ced2648.js"
+  "/uptown-arts/precache-manifest.49ace0b8544e5afd88b62aad65a7e085.js"
 );
 
 workbox.clientsClaim();
