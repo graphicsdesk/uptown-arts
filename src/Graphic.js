@@ -4,6 +4,14 @@ import injectSheet from 'react-jss';
 
 const SCROLLAMA_OFFSET = window.innerWidth > 575 ? 0.5 : 0.8;
 
+const imgStyles = {
+  position: 'absolute',
+  maxWidth: '95%',
+  maxHeight: '93%',
+  transitionDuration: '.6s',
+  boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
+};
+
 const styles = {
   main: {
     padding: '0 15px',
@@ -24,22 +32,14 @@ const styles = {
     alignItems: 'center',
   },
   img: {
-    position: 'absolute',
-    maxWidth: '95%',
-    maxHeight: '93%',
+    ...imgStyles,
     visibility: 'visible',
     opacity: 1,
-    transitionDuration: '.4s',
-    boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
   hideImg: {
-    position: 'absolute',
-    maxWidth: '95%',
-    maxHeight: '93%',
+    ...imgStyles,
     visibility: 'hidden',
     opacity: 0,
-    transitionDuration: '.4s',
-    boxShadow: '-1px 3px 10px -1px rgba(0,0,0,0.75)',
   },
   scroller: {
     flexBasis: '35%',
@@ -136,7 +136,12 @@ class Graphic extends Component {
 
     this.state = {
       data: this.images[0].src,
+      forceImg: true,
     };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ forceImg: false }), 10);
   }
 
   onStepEnter = ({ data }) => {
@@ -144,7 +149,7 @@ class Graphic extends Component {
   };
 
   render() {
-    const { data } = this.state;
+    const { data, forceImg } = this.state;
     const { classes } = this.props;
 
     return (
@@ -153,7 +158,9 @@ class Graphic extends Component {
           {this.images.map(({ src, alt }) => (
             <img
               key={src}
-              className={data === src ? classes.img : classes.hideImg}
+              className={
+                forceImg || data === src ? classes.img : classes.hideImg
+              }
               src={src}
               alt={alt}
             />
