@@ -6,7 +6,7 @@ date: May 2, 2019
 headline: The Uptown Arts Stroll Paints a Portrait of Upper Manhattan
 image: https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/RTCVTHKADBDZXMMHFWSNMRYCNE.png
 [.bylines]
-* Written by Keri Kelly
+* Written by <a href="https://www.columbiaspectator.com/contributors/Keri-Kelly/">Keri Kelly</a>
 * Graphics by Jason Kao and Raeedah Wahid
 * Illustration by Brenda Huang
 []

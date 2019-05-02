@@ -40,6 +40,9 @@ const styles = {
     margin: '0 !important',
     marginBottom: '8px !important',
     fontWeight: '900 !important',
+    '& a': {
+      color: '#000 !important',
+    },
   },
   timestamp: {
     fontSize: '1rem !important',
