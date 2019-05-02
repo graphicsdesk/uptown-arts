@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/spec-journalism/uptown-arts/precache-manifest.0b6e12a587f4f473716dfb7efe95b754.js"
+  "/uptown-arts/precache-manifest.662d55a017e0c84a2acfc5e76ced2648.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/spec-journalism/uptown-arts/index.html", {
+workbox.routing.registerNavigationRoute("/uptown-arts/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

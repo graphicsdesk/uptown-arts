@@ -1,11 +1,11 @@
 {
-  "main.js": "/spec-journalism/uptown-arts/static/js/main.97a98bf7.chunk.js",
-  "main.js.map": "/spec-journalism/uptown-arts/static/js/main.97a98bf7.chunk.js.map",
-  "runtime~main.js": "/spec-journalism/uptown-arts/static/js/runtime~main.a5d6287e.js",
-  "runtime~main.js.map": "/spec-journalism/uptown-arts/static/js/runtime~main.a5d6287e.js.map",
-  "static/js/2.24737297.chunk.js": "/spec-journalism/uptown-arts/static/js/2.24737297.chunk.js",
-  "static/js/2.24737297.chunk.js.map": "/spec-journalism/uptown-arts/static/js/2.24737297.chunk.js.map",
-  "index.html": "/spec-journalism/uptown-arts/index.html",
-  "precache-manifest.0b6e12a587f4f473716dfb7efe95b754.js": "/spec-journalism/uptown-arts/precache-manifest.0b6e12a587f4f473716dfb7efe95b754.js",
-  "service-worker.js": "/spec-journalism/uptown-arts/service-worker.js"
+  "main.js": "/uptown-arts/static/js/main.a3037b19.chunk.js",
+  "main.js.map": "/uptown-arts/static/js/main.a3037b19.chunk.js.map",
+  "runtime~main.js": "/uptown-arts/static/js/runtime~main.878daeb8.js",
+  "runtime~main.js.map": "/uptown-arts/static/js/runtime~main.878daeb8.js.map",
+  "static/js/2.24737297.chunk.js": "/uptown-arts/static/js/2.24737297.chunk.js",
+  "static/js/2.24737297.chunk.js.map": "/uptown-arts/static/js/2.24737297.chunk.js.map",
+  "index.html": "/uptown-arts/index.html",
+  "precache-manifest.662d55a017e0c84a2acfc5e76ced2648.js": "/uptown-arts/precache-manifest.662d55a017e0c84a2acfc5e76ced2648.js",
+  "service-worker.js": "/uptown-arts/service-worker.js"
 }
