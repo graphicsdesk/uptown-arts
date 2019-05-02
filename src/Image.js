@@ -31,7 +31,6 @@ const styles = {
   },
 };
 
-
 const Image = ({ classes, text }) => {
   text = text.substring(7);
   const splitIdx = text.indexOf(',');
