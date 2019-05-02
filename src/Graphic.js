@@ -21,6 +21,7 @@ const styles = {
     justifyContent: 'space-evenly',
   },
   graphic: {
+    transform: 'translate3d(0, 0, 0)',
     flexBasis: '60%',
     position: 'sticky',
     width: '100%',
