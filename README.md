@@ -1,6 +1,1 @@
-# Uptown Arts
-
-## Feature design
-
-* Scroll side by side: image on the left, text on the right
-* Each paragraph triggers a specific image to show
+**HED: The Uptown Arts Stroll Paints a Portrait of Upper Manhattan**
