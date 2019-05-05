@@ -3,10 +3,10 @@ import injectSheet from 'react-jss';
 
 const styles = {
   Break: {
-    margin: '3rem auto !important',
-    borderTop: '1px solid #ddd !important',
-    maxWidth: '600px !important',
-    padding: '0 15px !important',
+    margin: '3rem auto',
+    borderTop: '1px solid #ddd',
+    maxWidth: '600px',
+    padding: '0 15px',
   },
 };
 

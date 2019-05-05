@@ -3,30 +3,30 @@ import injectSheet from 'react-jss';
 
 const styles = {
   container: {
-    width: '70vw !important',
-    margin: '2rem auto !important',
-    maxWidth: '900px !important',
+    width: '70vw',
+    margin: '2rem auto',
+    maxWidth: '900px',
   },
   image: {
-    width: '100% !important',
-    marginBottom: '10px !important',
+    width: '100%',
+    marginBottom: '10px',
   },
   caption: {
-    fontFamily: 'Open Sans !important',
-    fontWeight: '400 !important',
-    fontSize: '0.88rem !important',
-    color: '#aaa !important',
-    margin: '0 !important',
-    padding: '0 15px !important',
+    fontFamily: 'Open Sans',
+    fontWeight: 400,
+    fontSize: '0.88rem',
+    color: '#aaa',
+    margin: 0,
+    padding: '0 15px',
   },
   '@media (max-width: 991px)': {
     container: {
-      width: '80vw !important',
+      width: '80vw',
     },
   },
   '@media (max-width: 680px)': {
     container: {
-      width: 'auto !important',
+      width: 'auto',
     },
   },
 };
